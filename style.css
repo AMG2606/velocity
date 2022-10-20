@@ -1,0 +1,506 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* common styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+.container{
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+/* header */
+.header{
+    padding-top:18px;
+    padding-bottom:18px;
+    background-color: #FFFFFF;
+}
+.logo a {
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #69B9FF;
+}
+.header-container{
+    display:flex;
+    justify-content: space-between;
+}
+.menu ul {
+    display: flex;
+}   
+.menu li {margin-left: 40px ;}
+.menu a{
+    color: #676770;
+    font-size: 16px;
+    line-height:20px ;
+    transition: color 0.5s;
+}
+.menu a:hover{
+    color: #0082F3;
+}
+/* banner   */
+.banner{
+    background-image:url(img/backg.jpg) ;
+    text-align: center;
+    padding-top: 184px;
+    padding-bottom: 199px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.transparent_btn{
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 31px 12px 31px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+.blue_btn{
+    background: #69B9FF;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+    padding:11px 30px 13px 30px;
+    display: inline-block; 
+    margin-right: 20px;
+    transition: all 0.5s;
+}
+.blue_btn:hover{
+    transform: scale(1.2);
+}
+.banner h1{
+    font-size: 59px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 106px;
+}
+.transparent_btn:hover{
+    transform: scale(1.2);}
+/*section what we do*/
+.work{
+    padding-top: 77px;
+    padding-bottom: 80px;
+    background-color: #FFFFFF;
+}
+.section-title{
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #676770;
+    margin-bottom: 17px;
+}
+.section-subtitle{
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8E8E9C;
+    margin-bottom: 62px;
+}
+.card{
+    background: #FFFFFF;
+    border: 1px solid #DCEBF7;
+    border-radius: 5px;
+    padding: 36px 16px 23px;
+    text-align: center;
+}
+.card-title{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: #676770;
+    margin-top: 19px;
+    margin-bottom: 14px;
+}
+.container-card{
+    display:flex;
+    gap: 20px;
+}
+.card-text{
+    font-size: 14px;
+    line-height: 25px;
+    color: #6A859C;
+}
+.service{  
+    background-color: #192024;
+    padding-top: 77px;
+    padding-bottom: 95px;
+}
+
+.service .section-title{
+    color: #FFFFFF;
+}
+.service .section-subtitle{
+    color: #E8E8E8;
+}
+.service-card p{
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 17px;
+}
+.card-service-title{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 19px;
+    margin-bottom: 23px;
+}
+.container-service{
+    display:flex;
+    gap: 50px;
+    text-align: center;
+}
+.container-tab label{
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 4px;
+    background: #92A0AD;
+    padding: 1px 30px;
+    transition: all 0.5s;
+    margin-right: 16px;
+    white-space: nowrap;
+}
+.container-tab .last-label{
+    margin:0px;
+}
+.container-tab label:hover {
+    background: #2E80B6;
+}
+.tab-contant-title{
+    font-size: 31px;
+    line-height: 36px;
+    text-align: center;
+    color: #676770;
+    margin-top: 16px;
+    margin-bottom:16px;
+}
+.tab-contant-text{
+    font-size: 13px;
+    line-height: 25px; 
+    text-align: center;
+    color: #6A859C;
+}
+.tab-content{
+    margin-top: 52px;
+    display: none;
+}
+#tab1:checked ~ .tab-contant1{
+    display:block;
+    
+}
+#tab2:checked ~ .tab-contant2{
+    display:block;
+}
+#tab3:checked ~ .tab-contant3{
+    display:block;
+}
+#tab1:checked +label{
+    background-color:#2E80B6 ;
+}
+#tab2:checked +label{
+    background-color:#2E80B6 ;
+}#tab3:checked +label{
+    background-color:#2E80B6 ;
+}
+input#tab1{
+    display: none;
+}input#tab3{
+    display: none;
+}input#tab2{
+    display: none;
+}
+.container-tab{
+    text-align: center;
+
+}
+.tabs{
+    padding-top: 77px;
+    padding-bottom: 90px;
+    background-color: #FFFFFF;
+}
+.info-box h4{
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #676770;
+    margin-bottom: 21px;
+}
+.info-box p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #6A859C;
+}
+.info-box a{
+    font-size: 13px;
+    line-height: 20px;
+    color: #668CAD;
+    flex-grow: 1;
+    border-bottom:1px solid #D5D5E0;
+}
+.info-box{
+    flex-basis: 320px;
+    padding-left: 20px;
+}
+.footer{
+    background-color: #FFFFFF;
+    padding-top: 33px;
+}
+.info-box li{
+    display:flex;
+    padding-bottom: 12px;
+}
+.info-box img{
+    vertical-align: middle;
+    margin-right: 11px;
+}
+.copyright{
+    padding-top: 40px;
+    padding-bottom: 41px;
+    background-color: #383838;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #9E9E9E;
+}
+.footer-info{
+    padding-bottom:36px ;
+    background-color:#ffffff;
+    display: flex;
+}
+
+/*media queres*/
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 45px;
+    }
+
+    .container-card{
+        display: block;
+    }
+    .card{
+        margin-bottom: 15px;
+    }
+    .container-service{
+        display:block ;
+    }
+    .service-card{
+        margin-bottom: 15px;
+    }
+    .info-box{
+        flex-basis: 50%;
+        margin-bottom: 15px;
+    }
+    .info-box1{
+        flex-basis: 100%;
+    }
+    .footer-info{
+        flex-wrap: wrap;
+    }
+
+    .container-tab label span {
+        display: none;
+    }
+}
+@media (max-width: 575px)  {
+    .footer-info{
+        display:block;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .container-tab label{
+        padding:1px 15px ;
+        margin-right:10px ;
+    }
+    .blue_btn{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .button_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu li{
+        margin-left: 17px;
+    }
+}
